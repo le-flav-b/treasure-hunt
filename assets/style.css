@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	background-color: #E0E0E0;
+}
+
+main {
+	width: 50%;
+	margin: auto;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	background-color: #D0D0D0;
+	text-align: center;
+	border: 2px solid #E09020;
+	padding: 10px 15px;
+}
+
+h1 {
+	color: #FF3C3C;
+	font-size: 40px;
+} #grand_titre {
+	font-size: 50px;
+}
+
+.vert {
+	font-size: 18px;
+	color: #31C911;
+}
+
+#fake {
+	width: 200px;
+	height: 70px;
+	border-radius: 50px;
+	border: 1px solid #00F;
+	background-image: linear-gradient(to bottom right, #0162C8, #55E7FC);
+	box-shadow: 2px 2px 4px #333;
+	font-size: 25px;
+	font-family: cursive;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+} #fake::before {
+	content: '';
+	position: absolute;
+	background-color: #FFF;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	left: calc(100% * var(--wavecoord-x));
+	top: calc(100% * var(--wavecoord-y));
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+} #fake:active::before {
+	transition-duration: 0s;
+	opacity: 0.8;
+	transform: translate(-50%, -50%) scale(0);
+}
+
+#transparent {
+	color: #E0E0E0;
+	cursor: default;
+} #transparent::selection {
+	background-color: #E0E0E1;
+}
+
+#porte {
+	color: #E0E0E0;
+	font-size: 20px;
+	margin-left: 10%;
+	text-decoration: none;
+	cursor: default;
+} #porte::selection {
+	background-color: #B0B0B0;
+}
+
+#binaire {
+	background-color: #FFF;
+	border: 2px solid #000;
+	font-size: 12px;
+}
+
+h2 {
+	color: #FF4040;
+	font-size: 1.6rem;
+}
+
+#lien_binaire {
+	color: #000;
+	text-decoration: none;
+	cursor: help;
+}
+
+#reponse {
+	width: 300px;
+}
+
+h3 {
+	color: #D0D0D0;
+}
+
+table {
+	width: 95%;
+	text-align: center;
+}
+
+.boutons_qcm {
+	background-image: linear-gradient(160deg, #9198e5, #e66465);
+	width: 90%;
+	height: 50px;
+	margin-bottom: 10px;
+	border-radius: 30%;
+	border-color: #C080A0;
+	font-size: 30px;
+	color: #DDD;
+	cursor: pointer;
+}
+
+#grand {
+	font-size: 60px;
+}
